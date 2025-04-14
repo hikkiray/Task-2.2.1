@@ -26,15 +26,12 @@ public class Car {
     public Long getId() {
         return id;
     }
-
     public String getModel() {
         return model;
     }
-
     public int getSeries() {
         return series;
     }
-
     public User getUser() {
         return user;
     }
@@ -42,15 +39,12 @@ public class Car {
     public void setId(Long id) {
         this.id = id;
     }
-
     public void setModel(String model) {
         this.model = model;
     }
-
     public void setSeries(int series) {
         this.series = series;
     }
-
     public void setUser(User user) {
         this.user = user;
     }
@@ -61,7 +55,6 @@ public class Car {
         Car car = (Car) o;
         return series == car.series && Objects.equals(id, car.id) && Objects.equals(model, car.model) && Objects.equals(user, car.user);
     }
-
     @Override
     public int hashCode() {
         return Objects.hash(id, model, series, user);
